@@ -3,17 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C4BABF8230E386E0048CC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BABF7230E386E0048CC53 /* AppDelegate.swift */; };
-		2C4BABFA230E386E0048CC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BABF9230E386E0048CC53 /* ViewController.swift */; };
 		2C4BABFD230E386E0048CC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BABFB230E386E0048CC53 /* Main.storyboard */; };
 		2C4BABFF230E38710048CC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BABFE230E38710048CC53 /* Assets.xcassets */; };
 		2C4BAC02230E38710048CC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BAC00230E38710048CC53 /* LaunchScreen.storyboard */; };
 		2C4BAC0D230E38710048CC53 /* XMReSwiftSingleModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC0C230E38710048CC53 /* XMReSwiftSingleModuleTests.swift */; };
 		2C4BAC18230E38710048CC53 /* XMReSwiftSingleModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC17230E38710048CC53 /* XMReSwiftSingleModuleUITests.swift */; };
+		2C4BAC33230E38FE0048CC53 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC27230E38FE0048CC53 /* MessageVC.swift */; };
+		2C4BAC35230E38FE0048CC53 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC2A230E38FE0048CC53 /* MessageModel.swift */; };
+		2C4BAC36230E38FE0048CC53 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC2C230E38FE0048CC53 /* MessageCell.swift */; };
+		2C4BAC37230E38FE0048CC53 /* MessageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC2E230E38FE0048CC53 /* MessageState.swift */; };
+		2C4BAC38230E38FE0048CC53 /* MessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC2F230E38FE0048CC53 /* MessageAction.swift */; };
+		2C4BAC39230E38FE0048CC53 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC30230E38FE0048CC53 /* MessageStore.swift */; };
+		2C4BAC3A230E38FE0048CC53 /* MessageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC31230E38FE0048CC53 /* MessageReducer.swift */; };
+		2C4BAC3F230E3A2D0048CC53 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC3D230E3A2D0048CC53 /* CollectionViewDataSource.swift */; };
+		2C4BAC40230E3A2D0048CC53 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BAC3E230E3A2D0048CC53 /* TableViewDataSource.swift */; };
+		95D2843CBC9CC601636924CC /* Pods_XMReSwiftSingleModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8237FFD5A056CAE831AAF51A /* Pods_XMReSwiftSingleModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AEA71841011E9D78D4F25E /* Pods-XMReSwiftSingleModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMReSwiftSingleModule.release.xcconfig"; path = "Target Support Files/Pods-XMReSwiftSingleModule/Pods-XMReSwiftSingleModule.release.xcconfig"; sourceTree = "<group>"; };
 		2C4BABF4230E386E0048CC53 /* XMReSwiftSingleModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMReSwiftSingleModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4BABF7230E386E0048CC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C4BABF9230E386E0048CC53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C4BABFC230E386E0048CC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C4BABFE230E38710048CC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4BAC01230E38710048CC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,17 @@
 		2C4BAC13230E38710048CC53 /* XMReSwiftSingleModuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMReSwiftSingleModuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4BAC17230E38710048CC53 /* XMReSwiftSingleModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMReSwiftSingleModuleUITests.swift; sourceTree = "<group>"; };
 		2C4BAC19230E38710048CC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4BAC27230E38FE0048CC53 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		2C4BAC2A230E38FE0048CC53 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		2C4BAC2C230E38FE0048CC53 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		2C4BAC2E230E38FE0048CC53 /* MessageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageState.swift; sourceTree = "<group>"; };
+		2C4BAC2F230E38FE0048CC53 /* MessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageAction.swift; sourceTree = "<group>"; };
+		2C4BAC30230E38FE0048CC53 /* MessageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
+		2C4BAC31230E38FE0048CC53 /* MessageReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReducer.swift; sourceTree = "<group>"; };
+		2C4BAC3D230E3A2D0048CC53 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		2C4BAC3E230E3A2D0048CC53 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		8237FFD5A056CAE831AAF51A /* Pods_XMReSwiftSingleModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMReSwiftSingleModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850944C40005B4CC39D7C0AB /* Pods-XMReSwiftSingleModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMReSwiftSingleModule.debug.xcconfig"; path = "Target Support Files/Pods-XMReSwiftSingleModule/Pods-XMReSwiftSingleModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D2843CBC9CC601636924CC /* Pods_XMReSwiftSingleModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,8 @@
 				2C4BAC0B230E38710048CC53 /* XMReSwiftSingleModuleTests */,
 				2C4BAC16230E38710048CC53 /* XMReSwiftSingleModuleUITests */,
 				2C4BABF5230E386E0048CC53 /* Products */,
+				52CC7E0D07EA76662A6B8F3F /* Pods */,
+				FC8C34DFFD3D05BA56A07E3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +120,9 @@
 		2C4BABF6230E386E0048CC53 /* XMReSwiftSingleModule */ = {
 			isa = PBXGroup;
 			children = (
+				2C4BAC3C230E3A2D0048CC53 /* Datasource */,
+				2C4BAC25230E38FE0048CC53 /* Message */,
 				2C4BABF7230E386E0048CC53 /* AppDelegate.swift */,
-				2C4BABF9230E386E0048CC53 /* ViewController.swift */,
 				2C4BABFB230E386E0048CC53 /* Main.storyboard */,
 				2C4BABFE230E38710048CC53 /* Assets.xcassets */,
 				2C4BAC00230E38710048CC53 /* LaunchScreen.storyboard */,
@@ -125,6 +149,78 @@
 			path = XMReSwiftSingleModuleUITests;
 			sourceTree = "<group>";
 		};
+		2C4BAC25230E38FE0048CC53 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC26230E38FE0048CC53 /* VC */,
+				2C4BAC29230E38FE0048CC53 /* Model */,
+				2C4BAC2B230E38FE0048CC53 /* View */,
+				2C4BAC2D230E38FE0048CC53 /* Redux */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2C4BAC26230E38FE0048CC53 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC27230E38FE0048CC53 /* MessageVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		2C4BAC29230E38FE0048CC53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC2A230E38FE0048CC53 /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C4BAC2B230E38FE0048CC53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC2C230E38FE0048CC53 /* MessageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C4BAC2D230E38FE0048CC53 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC2E230E38FE0048CC53 /* MessageState.swift */,
+				2C4BAC2F230E38FE0048CC53 /* MessageAction.swift */,
+				2C4BAC30230E38FE0048CC53 /* MessageStore.swift */,
+				2C4BAC31230E38FE0048CC53 /* MessageReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		2C4BAC3C230E3A2D0048CC53 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BAC3D230E3A2D0048CC53 /* CollectionViewDataSource.swift */,
+				2C4BAC3E230E3A2D0048CC53 /* TableViewDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		52CC7E0D07EA76662A6B8F3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				850944C40005B4CC39D7C0AB /* Pods-XMReSwiftSingleModule.debug.xcconfig */,
+				13AEA71841011E9D78D4F25E /* Pods-XMReSwiftSingleModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC8C34DFFD3D05BA56A07E3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8237FFD5A056CAE831AAF51A /* Pods_XMReSwiftSingleModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C4BAC1C230E38710048CC53 /* Build configuration list for PBXNativeTarget "XMReSwiftSingleModule" */;
 			buildPhases = (
+				2ADCBD8C5F934B9B72287FEA /* [CP] Check Pods Manifest.lock */,
 				2C4BABF0230E386E0048CC53 /* Sources */,
 				2C4BABF1230E386E0048CC53 /* Frameworks */,
 				2C4BABF2230E386E0048CC53 /* Resources */,
+				25F5A921F079B30B4E547F52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +349,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25F5A921F079B30B4E547F52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMReSwiftSingleModule/Pods-XMReSwiftSingleModule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMReSwiftSingleModule/Pods-XMReSwiftSingleModule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XMReSwiftSingleModule/Pods-XMReSwiftSingleModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ADCBD8C5F934B9B72287FEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMReSwiftSingleModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C4BABF0230E386E0048CC53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4BABFA230E386E0048CC53 /* ViewController.swift in Sources */,
+				2C4BAC35230E38FE0048CC53 /* MessageModel.swift in Sources */,
+				2C4BAC3F230E3A2D0048CC53 /* CollectionViewDataSource.swift in Sources */,
+				2C4BAC38230E38FE0048CC53 /* MessageAction.swift in Sources */,
+				2C4BAC39230E38FE0048CC53 /* MessageStore.swift in Sources */,
+				2C4BAC3A230E38FE0048CC53 /* MessageReducer.swift in Sources */,
+				2C4BAC40230E3A2D0048CC53 /* TableViewDataSource.swift in Sources */,
+				2C4BAC33230E38FE0048CC53 /* MessageVC.swift in Sources */,
+				2C4BAC37230E38FE0048CC53 /* MessageState.swift in Sources */,
 				2C4BABF8230E386E0048CC53 /* AppDelegate.swift in Sources */,
+				2C4BAC36230E38FE0048CC53 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +578,12 @@
 		};
 		2C4BAC1D230E38710048CC53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850944C40005B4CC39D7C0AB /* Pods-XMReSwiftSingleModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XMReSwiftSingleModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +597,12 @@
 		};
 		2C4BAC1E230E38710048CC53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AEA71841011E9D78D4F25E /* Pods-XMReSwiftSingleModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XMReSwiftSingleModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
